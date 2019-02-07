@@ -19,7 +19,6 @@ hr.light {
 }
 
 a {
-  color: #4f8bd8;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -167,10 +166,10 @@ img::-moz-selection {
 }
 
 
-.text-center {
+#home.text-center {
     text-align: center!important;
 }
-.d-flex {
+#home.d-flex {
     display: -ms-flexbox!important;
     display: flex!important;
 }
@@ -206,7 +205,7 @@ img::-moz-selection {
     margin-left: auto;
 }
 
-header.masthead {
+#home.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header.jpg");
@@ -217,40 +216,41 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead hr {
+#home.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-header.masthead h1 {
+#home.masthead h1 {
   font-size: 2rem;
   text-transform: uppercase!important;
+  line-height: 5rem;
 }
 
-header.masthead p {
+#home.masthead p {
   font-weight: 300;
 }
 
 @media (min-width: 768px) {
-  header.masthead p {
+  #home.masthead p {
     font-size: 1.15rem;
   }
 }
 
 @media (min-width: 992px) {
-  header.masthead {
+  #home.masthead {
     height: 100vh;
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
   }
-  header.masthead h1 {
+  #home.masthead h1 {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 1200px) {
-  header.masthead h1 {
+  #home.masthead h1 {
     font-size: 4rem;
   }
 }
@@ -473,4 +473,128 @@ header.masthead p {
   .showcase .showcase-text {
     padding: 7rem;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+@media (min-width: 992px)
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+@media (min-width: 992px)
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.navbar>.container, .navbar>.container-fluid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 70%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+
+@media (min-width: 992px)
+#mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff!@important;
 }

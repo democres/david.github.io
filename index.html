@@ -220,53 +220,6 @@ body {
   background: #455261;
   height: 100px; }
 
-nav {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  background: #1B242F;
-  border-bottom: 3px solid #04C2C9;
-  text-align: left;
-  z-index: 99; }
-  nav.fixed {
-    top: 0;
-    bottom: inherit;
-    left: 0;
-    position: fixed; }
-    nav.fixed.desk {
-      animation: popDown .5s; }
-  nav .link-wrap {
-    max-width: 1200px;
-    width: 100%;
-    position: absolute;
-    top: 53px;
-    background: #333;
-    overflow: hidden;
-    height: 0;
-    transition: height .3s ease-out; }
-    nav .link-wrap.visible {
-      height: 220px; }
-    nav .link-wrap div {
-      padding: 12px 20px;
-      font-size: 12pt;
-      cursor: pointer;
-      transition: color .5s;
-      text-transform: uppercase; }
-      nav .link-wrap div:first-child {
-        padding: 25px 20px 12px 20px; }
-      nav .link-wrap div:hover {
-        color: #6699ff; }
-  nav .mdi-menu {
-    position: absolute;
-    right: 5vw;
-    margin: auto 0;
-    font-size: 30pt;
-    line-height: 36pt;
-    top: 0; }
-  nav .active {
-    color: #6699ff; }
 
 .carousel-wrap {
   position: relative;
@@ -1087,46 +1040,38 @@ footer {
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
 
 </head>
 
 <body class="">
   <div class="overflow-wrap">
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">David Figueroa <br> <p style="font-size: 13px;">Cosmos Security Group™</p> </a>
 
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 id="typed" class="text-uppercase">
-              <strong>Software Engineer </strong>
-              <br>
-              <strong style="font-size: 0.8em;">&</strong>
-              <br>
-              <strong>Security Consultant</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <div id="typed-strings">
-               <p></p>
-               <p><strong>Full-Stack Web Developer</strong></p>
-               <p><strong>Mobile Developer</strong></p>
-               <p><strong>Artificial Intelligence</strong></p>
-               <p><strong>Machine Learning</strong></p>
-               <p><strong>Data Science & Analytics</strong></p>
-               <p><strong>Data Mining</strong></p>
-               <p><strong>Data Extraction / ETL</strong></p>
-               <p><strong>Information Security</strong></p>
-               <p><strong>Network & System Administration</strong></p>
-            </div>
-            <p  class="text-faded mb-5"> <b>Software Engineer based in Barranquilla, Colombia.<br> Highly experienced in designing & developing custom projects.</b></p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-            <a href="#about" class="nav-link js-scroll-trigger arrow bounce"></a>
-          </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
+
 
 
 
@@ -1159,28 +1104,52 @@ footer {
     </div>
 
 
-    <section id="home" class="flex height-fix">
-      <div id="pt" class="canvas"><canvas id="canvas" width="782" height="693" style="width: 782px; height: 693px;"></canvas></div>
+
+
+
+
+
+
+    <section id="home" class="flex height-fix masthead text-center text-white d-flex">
+      <div id="pt" class=""><canvas id="canvas" width="782" height="0" style="width: 782px; height: 0px;"></canvas></div>
       <div class="flex">
 
-        <div class="text">
-          Hello, I'm <span class="highlight">David Figueroa</span>.
-          <br>
-          I'm a Software Developer.
+
+        <div class="container my-auto">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <h1 id="typed" class="text-uppercase">
+                <strong>Software Engineer </strong>
+                <br>
+                <strong style="font-size: 0.8em;">&</strong>
+                <br>
+                <strong>Security Consultant</strong>
+              </h1>
+              <hr>
+            </div>
+            <div class="col-lg-8 mx-auto">
+              <div id="typed-strings">
+                 <p></p>
+                 <p><strong>Full-Stack Web Developer</strong></p>
+                 <p><strong>Mobile Developer</strong></p>
+                 <p><strong>Artificial Intelligence</strong></p>
+                 <p><strong>Machine Learning</strong></p>
+                 <p><strong>Data Science & Analytics</strong></p>
+                 <p><strong>Data Mining</strong></p>
+                 <p><strong>Data Extraction / ETL</strong></p>
+                 <p><strong>Information Security</strong></p>
+                 <p><strong>Network & System Administration</strong></p>
+              </div>
+              <p  class="text-faded mb-5"> <b>Software Engineer based in Barranquilla, Colombia.<br> Highly experienced in designing & developing custom projects.</b></p>
+              <br>
+              <br>
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+              <a href="#about" class="nav-link js-scroll-trigger arrow bounce"></a>
+            </div>
+          </div>
         </div>
 
-        <div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
 
-        <nav class="flex desk">
-          <div class="link-wrap">
-            <div class="page-link active" dest="home">home</div>
-            <div class="page-link" dest="about">about</div>
-            <div class="page-link" dest="portfolio">portfolio</div>
-            <div class="page-link" dest="blog">blog</div>
-            <div class="page-link" dest="contact">contact</div>
-          </div>
-          <i class="mdi mdi-menu"></i>
-        </nav>
       </div>
 
     </section>
@@ -1585,7 +1554,8 @@ footer {
 
 
 
-
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.js"></script>
   <script src="./index_files/canvas.js.download"></script>
   <script src="js/typed.min.js"></script>
 
