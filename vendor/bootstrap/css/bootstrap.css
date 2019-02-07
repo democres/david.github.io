@@ -3218,3 +3218,20 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030;
 }
+
+
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
