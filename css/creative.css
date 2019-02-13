@@ -593,11 +593,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 94%;
   }
 
   .nav-item {
     font-size: 30px;
+  }
+
+  #home {
+    height: 26rem !important;
   }
 }
 
